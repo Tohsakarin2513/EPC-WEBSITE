@@ -1,0 +1,141 @@
+﻿<!--
+Name: Elijah Jacob D. Masangcay
+Section: BSIT TSM 3B
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Build Your PC</title>
+  <link rel="stylesheet" href="ELITEMP.css">
+</head>
+<body>
+  <div class="container">
+    <div class="Login-Card">
+      <div class="logo">
+        <img src="./EPC.png" alt="EPC Logo">
+      </div>
+
+      <div class="introduction">
+        <h1>EPC</h1>
+        <p>EPC is a freelance technician who specializes in custom-built PCs.</p>
+        <h2>Let's Build Your Dream PC</h2>
+      </div>
+
+      <button
+        type="button"
+        class="build-button"
+        onclick="document.getElementById('build-section').scrollIntoView({ behavior: 'smooth' });"
+      >
+        Build your PC
+      </button>
+
+      <a class="explore-parts-button" href="#parts-section">
+        Explore Parts Here
+      </a>
+    </div>
+  </div>
+
+  <section id="build-section" class="content-section">
+    <h2>Build Your PC</h2>
+
+    <div id="part-preview" class="part-preview">
+      <p>Select a component to preview its image.</p>
+    </div>
+
+    <h3>Selected Parts</h3>
+    <ul id="selected-parts">
+      <li class="empty-message">Choose PC components from the list below.</li>
+    </ul>
+
+    <button type="button" class="cart-button" onclick="addSelectedPartsToCart()">
+      Add Selected Parts to Cart
+    </button>
+
+    <button type="button" class="clear-button" onclick="clearSelections()">
+      Clear Selections
+    </button>
+
+    <div class="cart">
+      <h3>Your Cart</h3>
+      <ul id="cart-items">
+        <li class="empty-message">Your cart is empty.</li>
+      </ul>
+
+      <button type="button" class="remove-cart-button" onclick="clearCart()">
+        Clear Cart
+      </button>
+    </div>
+  </section>
+
+  <section id="parts-section" class="content-section">
+    <h2>Explore Parts</h2>
+
+    <ul>
+      <li>
+        CPU
+        <ul>
+          <li><button type="button" data-category="CPU" onclick="selectPart(this)">Intel Core i9 14900KF</button></li>
+          <li><button type="button" data-category="CPU" onclick="selectPart(this)">AMD Ryzen 7 7800X3D</button></li>
+          <li><button type="button" data-category="CPU" onclick="selectPart(this)">Intel Ultra 9 285K</button></li>
+          <li><button type="button" data-category="CPU" onclick="selectPart(this)">AMD Ryzen 9 9950X3D</button></li>
+        </ul>
+      </li>
+
+      <li>
+        Graphics Card
+        <ul>
+          <li><button type="button" data-category="Graphics Card" onclick="selectPart(this)">ASUS ROG STRIX 5090</button></li>
+          <li><button type="button" data-category="Graphics Card" onclick="selectPart(this)">Gigabyte RTX 5090 XTREME WATERFORCE</button></li>
+          <li><button type="button" data-category="Graphics Card" onclick="selectPart(this)">ASUS ROG Astral RTX 5080</button></li>
+          <li><button type="button" data-category="Graphics Card" onclick="selectPart(this)">MSI RTX 5080 SUPRIM OC</button></li>
+          <li><button type="button" data-category="Graphics Card" onclick="selectPart(this)">PowerColor Hellhound RX 9070 XT</button></li>
+          <li><button type="button" data-category="Graphics Card" onclick="selectPart(this)">ASUS TUF Gaming RX 9070 XT OC Black Ops 7</button></li>
+        </ul>
+      </li>
+
+      <li>
+        RAM
+        <ul>
+          <li><button type="button" data-category="RAM" onclick="selectPart(this)">Trident G-SKILL 2x16 6000Mhz</button></li>
+          <li><button type="button" data-category="RAM" onclick="selectPart(this)">Kingston ARGB 2X16 5600Mhz</button></li>
+          <li><button type="button" data-category="RAM" onclick="selectPart(this)">T-FORCE DELTA 2x32 6000Mhz</button></li>
+          <li><button type="button" data-category="RAM" onclick="selectPart(this)">CORSAIR VENGEANCE 2x16 6000Mhz</button></li>
+          <li><button type="button" data-category="RAM" onclick="selectPart(this)">Patriot Viper 2x16 6000Mhz</button></li>
+        </ul>
+      </li>
+
+      <li>
+        Storage
+        <ul>
+          <li><button type="button" data-category="Storage" onclick="selectPart(this)">Micron Crucial P510</button></li>
+          <li><button type="button" data-category="Storage" onclick="selectPart(this)">WD BLACK SN8100</button></li>
+          <li><button type="button" data-category="Storage" onclick="selectPart(this)">SAMSUNG SSD990 EVO</button></li>
+        </ul>
+      </li>
+
+      <li>
+        Power Supply
+        <ul>
+          <li><button type="button" data-category="Power Supply" onclick="selectPart(this)">Superflower</button></li>
+          <li><button type="button" data-category="Power Supply" onclick="selectPart(this)">Gigabyte</button></li>
+          <li><button type="button" data-category="Power Supply" onclick="selectPart(this)">MSI MAG</button></li>
+          <li><button type="button" data-category="Power Supply" onclick="selectPart(this)">ASUS ROG</button></li>
+        </ul>
+      </li>
+
+      <li>
+        PC Case
+        <ul>
+          <li><button type="button" data-category="PC Case" onclick="selectPart(this)">Fractal Design North</button></li>
+          <li><button type="button" data-category="PC Case" onclick="selectPart(this)">Phanteks XT Pro Ultra</button></li>
+          <li><button type="button" data-category="PC Case" onclick="selectPart(this)">Lian Li Lancool</button></li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+  <script src="Script1.js"></script>
+</body>
+</html>

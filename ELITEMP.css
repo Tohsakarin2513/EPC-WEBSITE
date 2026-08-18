@@ -1,0 +1,229 @@
+﻿html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #474244;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("https://uploads.onecompiler.io/44ykchy2m/1787051268676/gaming-setup-with-multiple-monitor_1087929-22721.avif.avif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+}
+
+.container,
+.content-section {
+  position: relative;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 75vh;
+}
+
+.Login-Card {
+  text-align: center;
+}
+
+.logo img {
+  width: 250px;
+  height: auto;
+  object-fit: contain;
+}
+
+.introduction {
+  max-width: 500px;
+  margin: 15px auto 25px;
+  color: white;
+  text-shadow: 1px 1px 3px #000;
+}
+
+.introduction h1,
+.introduction h2,
+.introduction p {
+  margin: 8px 0;
+}
+
+.introduction h1 {
+  font-size: 32px;
+}
+
+.introduction h2 {
+  color: #f0e68c;
+  font-size: 24px;
+}
+
+.introduction p {
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+.build-button,
+.explore-parts-button,
+.clear-button,
+.cart-button,
+.remove-cart-button {
+  display: block;
+  width: fit-content;
+  margin: 20px auto 0;
+  padding: 12px 24px;
+  color: #333;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.build-button {
+  background-color: #f0e68c;
+}
+
+.build-button:hover {
+  background-color: #d8ca67;
+}
+
+.explore-parts-button {
+  background-color: #ffcba4;
+}
+
+.explore-parts-button:hover {
+  background-color: #d9eeee;
+}
+
+.cart-button {
+  background-color: #90ee90;
+}
+
+.cart-button:hover {
+  background-color: #65c965;
+}
+
+.clear-button {
+  background-color: #f08080;
+}
+
+.clear-button:hover,
+.remove-cart-button:hover {
+  background-color: #d9534f;
+  color: white;
+}
+
+.remove-cart-button {
+  background-color: #f4a6a6;
+  font-size: 14px;
+}
+
+.content-section {
+  max-width: 700px;
+  min-height: 300px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: rgba(240, 230, 140, 0.9);
+  border-radius: 10px;
+  color: #333;
+}
+
+.content-section li {
+  margin: 10px 0;
+}
+
+.content-section li button {
+  padding: 0;
+  color: #333;
+  background: none;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+}
+
+.content-section li button:hover,
+.content-section li button.selected {
+  color: #b22222;
+  text-decoration: underline;
+}
+
+#selected-parts,
+#cart-items {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.empty-message {
+  font-weight: normal;
+}
+
+.part-preview {
+  min-height: 230px;
+  margin: 20px 0;
+  padding: 15px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.65);
+  border-radius: 8px;
+}
+
+.part-preview img {
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  height: 200px;
+  margin: 10px auto;
+  object-fit: contain;
+  border-radius: 6px;
+}
+
+.image-unavailable {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 360px;
+  height: 200px;
+  margin: 10px auto;
+  color: #666;
+  background-color: #ddd;
+  border-radius: 6px;
+}
+
+#part-information {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 130px;
+  margin: 10px auto 0;
+  padding: 12px;
+  color: #333;
+  background-color: white;
+  border: 2px solid #888;
+  border-radius: 6px;
+  font: inherit;
+  line-height: 1.5;
+  resize: vertical;
+}
+
+.part-preview label {
+  display: block;
+  margin-top: 18px;
+  color: #8b0000;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.cart {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.65);
+  border-radius: 8px;
+}
+
+.cart h3 {
+  margin-top: 0;
+}
